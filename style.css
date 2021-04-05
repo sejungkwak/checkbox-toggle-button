@@ -19,7 +19,6 @@ body {
 .switch {
     display: flex;
     align-items: center;
-    position: relative;
     height: 50px;
     width: 150px;
     margin: 10px auto;
@@ -33,11 +32,12 @@ body {
 }
 
 .slider {
-    position: absolute;
+    position: relative;
     width: 80px;
     height: 48px;
     background-color: #dee2e6;
     border-radius: 40px;
+    margin-right: 10px;
 }
 
 .slider::before {
@@ -58,9 +58,4 @@ input:checked + .slider {
 
 input:checked + .slider::before {
     transform: translateX(32px);
-}
-
-.text {
-    position: absolute;
-    left: 90px;
 }
